@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+Note: Starting Thunderbird FSM test bench...
+Time: 0 ps  Iteration: 0  Process: /thunderbird_fsm_tb/p_stimulus  File: C:/Users/C27Lachlan.Maclean/ECE281/ECE281-Lab3/src/thunderbird_fsm_tb.vhd
+Error: ERROR: First left state not as expected!
+Time: 50 ns  Iteration: 0  Process: /thunderbird_fsm_tb/p_stimulus  File: C:/Users/C27Lachlan.Maclean/ECE281/ECE281-Lab3/src/thunderbird_fsm_tb.vhd
+Error: ERROR: Second left state not as expected!
+Time: 70 ns  Iteration: 0  Process: /thunderbird_fsm_tb/p_stimulus  File: C:/Users/C27Lachlan.Maclean/ECE281/ECE281-Lab3/src/thunderbird_fsm_tb.vhd
+Error: ERROR: Third left state not as expected!
+Time: 90 ns  Iteration: 0  Process: /thunderbird_fsm_tb/p_stimulus  File: C:/Users/C27Lachlan.Maclean/ECE281/ECE281-Lab3/src/thunderbird_fsm_tb.vhd
+Note: Thunderbird FSM test bench complete. Check waveforms for detail.
+Time: 250 ns  Iteration: 0  Process: /thunderbird_fsm_tb/p_stimulus  File: C:/Users/C27Lachlan.Maclean/ECE281/ECE281-Lab3/src/thunderbird_fsm_tb.vhd
