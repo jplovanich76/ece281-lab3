@@ -148,6 +148,36 @@ begin
         s_left <= '0';
         wait for (2 * c_CLK_PERIOD);
 
+        -- Activate the right signal
+s_right <= '1';
+wait for (2 * c_CLK_PERIOD);
+
+assert (s_lights_R = "001")
+    report "ERROR: First right state not as expected!"
+    severity error;
+
+wait for (2 * c_CLK_PERIOD);
+
+assert (s_lights_R = "011")
+    report "ERROR: Second right state not as expected!"
+    severity error;
+
+wait for (2 * c_CLK_PERIOD);
+
+assert (s_lights_R = "111")
+    report "ERROR: Third right state not as expected!"
+    severity error;
+
+wait for (2 * c_CLK_PERIOD);
+
+assert (s_lights_R = "000")
+    report "ERROR: Did not return to OFF after finishing right sequence!"
+    severity error;
+
+-- Deactivate the signal
+s_right <= '0';
+wait for (2 * c_CLK_PERIOD);
+
         ------------------------------------------------------------------
         -- Test #3: Hazard Condition (Both Left and Right)
         ------------------------------------------------------------------
